@@ -78,44 +78,47 @@ Aplikasi frontend untuk sistem manajemen armada kendaraan Transjakarta yang meng
 
 ```
 transjakarta-fleet/
-├── src/
-│   ├── api/              # API configuration
-│   │   └── axios.ts      # Axios instance dengan base URL
-│   ├── components/       # React components
-│   │   ├── ErrorMessage.tsx
-│   │   ├── LoadingSpinner.tsx
-│   │   ├── MultiSelectDropdown.tsx
-│   │   ├── Pagination.tsx
-│   │   ├── Sidebar.tsx
-│   │   ├── VehicleCard.tsx
-│   │   └── VehicleDetailModal.tsx
-│   ├── hooks/            # Custom hooks
-│   │   ├── useAllVehicles.ts
-│   │   ├── useAutoRefresh.ts
-│   │   ├── useVehicles.ts
-│   │   ├── useRoutes.ts
-│   │   └── useTrips.ts
-│   ├── contexts/         # Context providers
-│   │   └── SidebarContext.tsx
-│   ├── types/            # TypeScript type definitions
-│   │   └── index.ts
-│   ├── utils/            # Utility functions
-│   │   ├── cn.ts         # className utility
-│   │   └── formatters.ts # Data formatting utilities
-│   ├── App.tsx           # Main app component
-│   ├── main.tsx          # Entry point
-│   └── index.css         # Global styles
-│   ├── pages/             # App pages
-│   │   ├── Dashboard.tsx
-│   │   ├── Fleet.tsx
-│   │   └── Map.tsx
-├── public/               # Static assets
-├── index.html
-├── package.json
-├── tsconfig.json
-├── tailwind.config.js
-├── postcss.config.js
-└── vite.config.ts
+├── README.md
+├── API_DOCS.md
+└── app/
+   ├── src/
+   │   ├── api/              # API configuration
+   │   │   └── axios.ts      # Axios instance dengan base URL
+   │   ├── components/       # React components
+   │   │   ├── ErrorMessage.tsx
+   │   │   ├── LoadingSpinner.tsx
+   │   │   ├── MultiSelectDropdown.tsx
+   │   │   ├── Pagination.tsx
+   │   │   ├── Sidebar.tsx
+   │   │   ├── VehicleCard.tsx
+   │   │   └── VehicleDetailModal.tsx
+   │   ├── hooks/            # Custom hooks
+   │   │   ├── useAllVehicles.ts
+   │   │   ├── useAutoRefresh.ts
+   │   │   ├── useVehicles.ts
+   │   │   ├── useRoutes.ts
+   │   │   └── useTrips.ts
+   │   ├── contexts/         # Context providers
+   │   │   └── SidebarContext.tsx
+   │   ├── types/            # TypeScript type definitions
+   │   │   └── index.ts
+   │   ├── utils/            # Utility functions
+   │   │   ├── cn.ts         # className utility
+   │   │   └── formatters.ts # Data formatting utilities
+   │   ├── App.tsx           # Main app component
+   │   ├── main.tsx          # Entry point
+   │   └── index.css         # Global styles
+   │   └── pages/             # App pages
+   │       ├── Dashboard.tsx
+   │       ├── Fleet.tsx
+   │       └── Map.tsx
+   ├── public/               # Static assets
+   ├── index.html
+   ├── package.json
+   ├── tsconfig.json
+   ├── tailwind.config.js
+   ├── postcss.config.js
+   └── vite.config.ts
 ```
 
 ### Penjelasan Arsitektur
@@ -146,17 +149,22 @@ Ini memisahkan logic dari UI component, membuat code lebih clean dan testable.
 
 1. Clone atau download project ini
 
-2. Install dependencies:
+2. Masuk ke folder app:
+```bash
+cd app
+```
+
+3. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Jalankan development server:
+4. Jalankan development server:
 ```bash
 npm run dev
 ```
 
-4. Buka browser dan akses:
+5. Buka browser dan akses:
 ```
 http://localhost:5173
 ```
